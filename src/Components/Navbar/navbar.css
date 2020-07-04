@@ -1,0 +1,201 @@
+.navbar-container {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #202020;
+}
+.desktop-navbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #202020;
+    z-index: 0;
+}
+.top-navbar {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    justify-content: space-between;
+    border-bottom: 1px solid #4d4d4d;
+    padding: 0 10%;
+}
+.top-navbar-sign-join-div {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: 52px;
+    border-left: 1px solid #4d4d4d;
+    border-right: 1px solid #4d4d4d;
+}
+.top-navbar-sign-join {
+    display: flex;
+    align-items: center;
+}
+.top-navbar-sign-join div {
+    padding: 0 .5rem;
+}
+.top-navbar-marvel-div {
+    padding-top: 3px;
+}
+.top-navbar-mastercard-div {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    border-left: 1px solid #4d4d4d;
+    border-right: 1px solid #4d4d4d;
+}
+.top-navbar-mastercard-text-div {
+    padding-left: .5rem;
+    padding-right: 2rem;
+}
+.top-navbar-search-div {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    padding-left: 1rem;
+    border-left: 1px solid #4d4d4d;
+}
+.bottom-navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.bottom-navbar ul li {
+    padding: 15px
+}
+.responsive-hamburger-menu {
+    display: none;
+}
+.responsive-hamburger-menu div {
+    width: 25px;
+    height: 2.5px;
+    margin: .25rem 0;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+@media only screen and (max-width: 1300px) {
+    .top-navbar {
+        padding: 0 2.5%;
+    }
+}
+@media only screen and (max-width: 838px) {
+    .responsive-hamburger-menu {
+        display: block;
+    }
+    .top-navbar-sign-join-div {
+        display: none;
+    }
+    .top-navbar-mastercard {
+        display: none;
+    }
+    .top-navbar-mastercard-text-div {
+        display: none;
+    }
+    .top-navbar-mastercard-div {
+        border: none;
+        padding: 0px;
+    }
+    .top-navbar-search-div {
+        border: none;
+    }
+    .bottom-navbar{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    
+}
+
+/* mobile navbar */
+
+.mobile-navbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    background-color: #202020;
+    z-index: 1;
+    overflow: scroll;
+    display: none;
+}
+.mobile-navbar-nav-items-div {
+    padding: 0px 5px 35px 20px;
+    border-bottom: 1px solid #4d4d4d;
+}
+.mobile-navbar-nav-items-div ul {
+    list-style: none;
+    padding: 13px 10px;
+}
+.mobile-navbar-nav-items-div ul li {
+    display: flex;
+    font-size: 17px;
+    font-weight: 620;
+    padding: 10px 0px;
+    justify-content: space-between;
+}
+.marvel-insider {
+    color: #e8b63e;
+    font-size: 12px;
+}
+.mobile-navbar-social-media-div {
+    padding: 45px 30px;
+}
+.mobile-navbar-social-media-div ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-navbar-promotions-div {
+    background-color: white;
+    padding: 30px 30px 50px 30px;
+    margin-bottom: 80px;
+}
+.mobile-navbar-promotions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.mobile-navbar-promotions-text {
+    padding-left: 10px;
+    width: 200px
+}
+.mobile-navbar-promotions-text h3 {
+    font-size: 13px;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 1rem;
+}
+.mobile-navbar-promotions-text h4 {
+    font-size: 14px;
+    color: #999999;
+}
+@keyframes moveNav {
+    0%   {width: 0%;}
+    100% {width: 0%;}
+  }
+@media screen and (max-width: 838px) {
+    .mobile-navbar {
+        display: block;
+        width: 100%;
+        animation: moveNav .3s linear;
+    }
+    @keyframes moveNav {
+        0%   {width: 0%;}
+        100% {width: 100%;}
+    }
+}
+@media screen and (min-width: 600px) {
+    .mobile-navbar {
+        width: 65%;
+        animation: moveNav .3s linear;
+    }
+    @keyframes moveNav {
+        0%   {width: 0%;}
+        100% {width: 65%;}
+      }
+}
